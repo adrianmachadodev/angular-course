@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="col">
+    <h3>{{ title }}</h3>
+  </div>
+  <hr />
+  <app-form (createdPerson)="addPerson($event)"></app-form>
+  <hr />
+  <app-person
+    *ngFor="let personaELement of person; let i = index"
+    [persona]="personaELement"
+    [index]="i"
+  ></app-person>
+</div>
