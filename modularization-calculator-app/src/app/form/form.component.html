@@ -1,0 +1,24 @@
+<form>
+  <div class="mb-3">
+    <label>Operator A</label>
+    <input
+      [(ngModel)]="operatorA"
+      type="number"
+      class="form-control"
+      placeholder="Write operator A"
+      name="operatorA"
+    />
+    {{ operatorA }}
+  </div>
+  <div class="mb-3">
+    <label>Operator B</label>
+    <input
+      [(ngModel)]="operatorB"
+      type="number"
+      class="form-control"
+      placeholder="Write operator B"
+      name="operatorB"
+    />
+  </div>
+  <button class="btn btn-primary" (click)="addNumbers()">Add</button>
+</form>
